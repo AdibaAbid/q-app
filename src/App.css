@@ -1,0 +1,193 @@
+body{
+  box-sizing: border-box;
+  background-color: #f3eded;
+  /* background-color: #282c34; */
+}
+.App {
+  text-align: center;
+}
+span{
+  color: #0863a5;
+
+}
+
+.searchbar input{
+  border: none;
+  border-bottom: 2px solid #007bff;
+}
+input:focus{
+  outline: none;
+}
+.form-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section form{
+  border-radius: 4%;
+  box-shadow: 13px 16px 19px 3px rgba(209,194,209,1);
+  padding: 31px;
+  text-align: initial;
+  background-color: #1e90ffba;
+  color:blue;
+  font-size: 20px;
+  margin-top: 35px;
+}
+.fb-btn{
+  background-color: rgb(221, 221, 221);
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-top: 7px;
+}
+.fb-btn i{
+  margin: 5px;
+}
+.btn-primary{
+  margin: 5px;
+}
+.homeBg{
+  height: 250px;
+  animation-name: bgImage;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transform: translateX(-800px);
+  transition: 2s cubic-bezier(0, 0, 0.55, 0.85);
+}
+
+
+@keyframes bgImage{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translateY(20px);
+  }
+}
+
+main{
+  margin: 0 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,h3{
+  margin: 0;
+}
+.App-header h1{
+  font-size: 30px;
+}
+.welcome{
+  text-transform: capitalize;
+  font-size: 30px;
+  color: rgb(25, 118, 210);
+}
+h2{
+  font-size: 25px;
+}
+table{
+  border-collapse: collapse;
+  color: #222;
+  width: 100%;
+  margin-top:1rem;
+}
+label{
+  font-weight: 700;
+}
+th,td{
+  padding: 15px;
+}
+table, td, th{
+  border: 1px solid darkcyan;
+  text-align: left;
+}
+
+
+button{
+  padding: 8px 10px;
+  border: none;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #222;
+}
+button:focus{
+  outline: none;
+}
+.nav-bar{
+  display:flex; 
+    flex-direction: row; 
+    justify-content:space-between; 
+    padding-top:65px;
+}
+
+.select-option{
+  margin-top: 8%;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+.select-option{
+  margin-top: 40%;
+}
+img{
+  height: 200px;
+  margin-top: 40px;
+}
+h1{
+  font-size: 20px;
+}
+.welcome{
+  font-size: 19px;
+}
+.nav-bar{
+ padding-top: 20px;
+}
+}
+
+.App-header, footer{
+  background-color: #282c34;
+  padding: 5px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+footer{
+  margin-top: 6%;
+  padding: 8px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.alert-heading{
+  font-size: 16px !important;
+}
+.alert{
+  margin: 0 !important;
+  padding: 4px 6px !important;
+  margin-top: -15px !important;
+}
+.alert-dismissible .close{
+  padding: 0px 5px !important;
+}
+.alert-dismissible .close:focus{
+outline: none;
+}
+td button{
+  margin: 5px;
+}
+
